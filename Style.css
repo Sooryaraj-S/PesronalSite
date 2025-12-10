@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #1e1f26, #232a3a, #1e1f26);
+  color: #f5f5f5;
+  overflow-x: hidden;
+}
+
+header {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(120deg, #00bcd4, #673ab7);
+  color: white;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+header h1 {
+  font-size: 3rem;
+  letter-spacing: 2px;
+  animation: slideDown 1.5s ease;
+}
+
+header p {
+  font-size: 1.3rem;
+  color: #dcdcdc;
+}
+
+section {
+  padding: 60px 10%;
+  animation: fadeInUp 1.2s ease;
+}
+
+h2 {
+  color: #00e6e6;
+  border-bottom: 3px solid #00e6e6;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.project-card {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+}
+
+.contact-btn {
+  display: inline-block;
+  padding: 15px 30px;
+  background: linear-gradient(90deg, #ff4081, #ff9100);
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.4s;
+}
+
+.contact-btn:hover {
+  transform: scale(1.1);
+  background: linear-gradient(90deg, #ff9100, #ff4081);
+}
+footer {
+  text-align: center;
+  padding: 25px;
+  background: #181a20;
+  color: #aaa;
+}
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes slideDown {
+  0% { transform: translateY(-50px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  0% { transform: translateY(50px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
